@@ -1,0 +1,483 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h3{
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	font-size: 60px;
+}
+body{
+	font-family: tahoma;
+}
+.load{
+	animation: slide 2s;
+}
+.slider{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	animation: slide 10s infinite;
+}
+.content{
+	color: #fff;
+	width: 100%;
+	height:100vh;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.row{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.main-nav{
+	list-style: none;
+	
+	margin-left: 65px;
+}
+.main-nav li{
+	margin-top: 30px;
+	
+	display: inline-block;
+	margin-left: 70px;
+}
+.main-nav li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+.main-nav li a:hover{
+	color: orange;
+	border-bottom: 2px solid orange;
+	transition: all 0.5s ease-in;
+	padding: 15px 0;
+}
+.principal{
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	text-align: center;
+	letter-spacing: 5px;
+}
+.principal h1{
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	font-style: italic;
+	font-size: 70px;
+	margin-bottom: 2px;
+	color: #e67e22;
+}
+.principal h2{
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	font-size: 105px;
+	margin-left: 2px;
+}
+@keyframes slide{
+	0%{
+		background-image: url(i20.jpg);
+	}
+	20%{
+		background-image: url(i20.jpg);
+	}
+	20.01%{
+		background-image: url(i25.jpg);
+	}
+	40%{
+		background-image: url(i25.jpg);
+	}
+	40.01%{
+		background-image: url(i22.jpg);
+	}
+	60%{
+		background-image: url(i22.jpg);
+	}
+	60.01%{
+		background-image: url(i12.jpg);
+	}
+	80%{
+		background-image: url(i12.jpg);
+	}
+	80.01%{
+		background-image: url(i10.jpg);
+	}
+	100%{
+		background-image: url(i10.jpg);
+	}
+}
+h3:after{
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	width: 100px;
+	height: 2px;
+	background-color: #e67e22;
+	display: block;
+	content: "";
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.mobile{
+	margin-top: 50px;
+}
+
+.container{
+	margin-top: 30px;
+	width: 100%;
+}
+
+.pic{
+	height: auto;
+}
+.pic img{
+	
+	width: 100%;
+	height: auto;
+	border-radius: 20%;
+}
+.pic-detail{
+	font-family: "Trattatello, fantasy";
+	font-size: 25px;
+	margin-top: 30px;
+	margin-left: 120px;
+	font-style: italic;
+}
+.pic-detail a{
+	color: #e67e22;
+}
+.meal{
+	margin-top: 60px;
+}
+.meal-showcase{
+	margin-top: 40px;
+	list-style: none;
+	width: 100%;
+}
+.meal-showcase li{
+	display: block;
+	width: 25%;
+	float: left;
+}
+.meal-photo{
+	position: relative;   //important
+	width: 100%;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+}
+.meal-photo img{
+	width: 100%;
+	height: auto;
+	transform: scale(1.15);
+	transition: all 1s;
+}
+.meal-photo img:hover{
+	transform: scale(1.05);
+}
+.meal-photo h2{
+	font-family: "Trattatello, fantasy";
+	font-size: 47px;
+	font-style: italic;
+	position: absolute;
+	text-align: center;
+	bottom: -33px;
+	margin: 0;
+	padding: 0;
+	transform: translateY(20%);
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+	transition: .5s;
+}
+.meal-photo:hover h2{
+	bottom: 20%;
+	transform: translateY(20%);
+}
+.special h3{
+	margin-top: 60px;
+}
+
+.fresh{
+	margin-top: 80px;
+	background-image: url(i24.jpg);
+	width: 100%;
+	height: 400px;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.fresh-detail{
+	margin-top: 60px;
+}
+.fresh-detail h2{
+	margin-left: 20px;
+	font-family: "Trattatello, fantasy";
+	font-style: italic;
+	font-weight: bold;
+	font-size: 105px;
+	color: #fff;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	visibility: hidden;
+	content:"";
+}
+.menu{
+	margin-top: 60px;
+}
+.menu .container{
+	margin: 0 auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.dishes h2{
+	font-family: "Trattatello, fantasy";
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+	margin-left: 5px;
+	margin-bottom: 2px;
+}
+.card{
+	margin-top: 30px;
+	width: 300px;
+	height: 270px;
+	background: #262626;
+	overflow: hidden;
+	margin-left: 45px;
+	border-radius: 10px;
+}
+.card .image1,
+.card .details{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	box-sizing: border-box;
+	transition: .5s;
+	
+}
+.card .image1{
+	top: 0;
+	left: 0;
+}
+.card:hover .image1{
+	top: 0;
+	left: -100%;
+}
+.card .image1 img{
+	width: 100%;
+	height: 100%;
+}
+.card .details{
+	background: #262626;
+	top: 0;
+	left: 100%;
+	padding: 60px 30px;
+}
+.card:hover .details{
+	top: 0;
+	left: 0;
+}
+.card .details h2{
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 0 0 10px;
+	border-bottom: 2px solid #fff;
+}
+.card .details p{
+	color: #fff;
+	margin: 20px 0 0;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	visibility: hidden;
+	content:"";
+}
+.reservation{
+	margin-top: 60px;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(d2.jpg);
+	width: 100%;
+	height: 800px;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.reservation-detail{
+	margin-top: 140px;
+}
+.reservation-detail h3{
+	color: #fff;
+	font-size: 100px;
+}
+.gap{
+	margin-top: 50px;
+}
+.contact-form{
+	
+}
+input {
+    color:black;
+    margin-bottom: 17px; 
+background: rgba(0, 0, 0, 0.4);	
+}
+.form-control{
+	color:black;
+	background: rgba(0, 0, 0, 0.4);
+}
+.button{
+	background: #262628 none repeat scroll 0 0;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	border-radius:10px;
+	-webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+.button:hover{
+	background-color: #e67e22;
+	color: white;
+	transition: all 0.3s ease-in;
+}
+.hours{
+	margin-top: 60px;
+	background-image: url(i22.jpg);
+	width: 100%;
+	height: 700px;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.hours-detail h6{
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	margin-top: 50px;
+	color: #fff;
+	font-size: 120px;
+}
+h6:after{
+	background-color: #fff;
+	width: 200px;
+	height: 4px;
+	display: block;
+	content: "";
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.hours-detail h4{
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	margin-top: 60px;
+	color: #fff;
+	font-size: 100px;
+}
+
+.cities{
+	margin-top: 60px;
+}
+.container{
+	width: 100%;
+}
+.c1 img{
+	width: 100%;
+}
+h4{
+	font-family: "Trattatello, fantasy";
+	font-style: italic;
+	margin-top: 13px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #e67e22;
+}
+p{
+	font-family: "Trattatello, fantasy";
+	font-style: italic;
+	margin-top: 13px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cities i{
+	color: #e67e22;
+	margin-right: 13px;
+}
+.footer{
+	background: black;
+	width: 100%;
+	height: 80%;
+}
+.footer .container{
+	width: 100%;
+	height: 80%;
+}
+h2{
+	margin-left: 360px;
+	color: #fff;
+	padding-top: 40px;
+	font-size: 40px;
+}
+.contact{
+	margin-top: 40px;
+	margin-left: 70px;
+}
+.contact h1{
+	color: #e67e22;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.fa-location-arrow{
+	color: #fff;
+}
+.fa-phone{
+	color: #fff;
+}
+.contact span{
+	margin-left: 10px;
+	color: #fff;
+}
+.contact p{
+	color: #fff;
+	font-size: 15px;
+}
+.social{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+.social h1{
+	margin-left: 11px;
+	color: #e67e22;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.social a{
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+}
+.social{
+	margin-left: 20px;
+	margin-top: 40px;
+}
+.fa-facebook-square:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover{
+	color: #e67e22;
+}
+.message{
+	margin-left: 40px;
+	margin-top: 40px;
+}
+.message input{
+	margin-bottom: 6px;
+}
+.msg-btn{
+	font-size: 15px;
+	margin-top: 20px;
+	border-radius:10px;
+	-webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+}
+
+
